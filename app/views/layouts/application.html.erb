@@ -6,9 +6,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css" /> -->
   </head>
 
   <body>
+
     <%= yield %>
+    <%= javascript_include_tag 'application' %>
+
+    <!-- <script src="https://cwdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js"></script> -->
+    <%#= javascript_pack_tag 'application' %> 
+    <!-- if i use webpack -->
   </body>
 </html>

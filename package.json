@@ -1,5 +1,9 @@
 {
   "name": "guybennettjones",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "fullpage.js": "^3.0.3",
+    "three-bas": "^2.7.1",
+    "velocity-animate": "^1.5.2"
+  }
 }
