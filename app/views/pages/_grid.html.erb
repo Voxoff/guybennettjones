@@ -1,40 +1,38 @@
 <%= javascript_include_tag "hex" %>
 <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-
 <section class="intro-block">
-    <div class="centerfold-wrap">
-      <div class="hex-master-wrap">
-        <div class="grid-1">
-          <div class="hex-wrap" data-title="RAILS" data-content="rails">
-            <%= render "hexborder", image: "rails.png" %>
-          </div>
-          <div class="hex-wrap" id="ruby" data-title="RUBY" data-content="ruby">
-            <%= render "hexborder", image: "ruby.png" %>
-          </div>
+  <div class="centerfold-wrap">
+    <div class="hex-master-wrap">
+      <div class="grid-1">
+        <div class="hex-wrap" data-title="RAILS" data-content="rails">
+          <%= render "hexborder", image: "rails.png" %>
         </div>
-        <div class="grid-2">
-          <div class="hex-wrap" data-title="PYTHON" data-content="python">
-            <%= render "hexborder", image: "python.png" %>
-          </div>
-          <div class="hex-wrap" data-title="C" data-content="c">
-            <%= render "hexborder", image: "c6.png" %>
-          </div>
-          <div class="hex-wrap" data-title="JAVASCRIPT" data-content="js">
-            <%= render "hexborder", image: "js.png" %>
-          </div>
-        </div>
-        <div class="grid-3">
-          <div class="hex-wrap" data-title="REACT" data-content="react">
-            <%= render "hexborder", image: "react.png" %>
-          </div>
-          <div class="hex-wrap" data-title="HEROKU" data-content="heroku">
-            <%= render "hexborder", image: "heroku.png" %>
-          </div>
+        <div class="hex-wrap" id="ruby" data-title="RUBY" data-content="ruby">
+          <%= render "hexborder", image: "ruby.png" %>
         </div>
       </div>
-      <%= render "code_display" %>
-      <div class="hoverblock"></div>
+      <div class="grid-2">
+        <div class="hex-wrap" data-title="PYTHON" data-content="python">
+          <%= render "hexborder", image: "python.png" %>
+        </div>
+        <div class="hex-wrap" data-title="C" data-content="c">
+          <%= render "hexborder", image: "c6.png" %>
+        </div>
+        <div class="hex-wrap" data-title="JAVASCRIPT" data-content="js">
+          <%= render "hexborder", image: "js2.png" %>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="hex-wrap" data-title="REACT" data-content="react">
+          <%= render "hexborder", image: "react.png" %>
+        </div>
+        <div class="hex-wrap" data-title="HEROKU" data-content="heroku">
+          <%= render "hexborder", image: "heroku2.png" %>
+        </div>
+      </div>
     </div>
+    <%= render "code_display" %>
+  </div>
 </section>
 
 
