@@ -1,10 +1,8 @@
 //= require jquery
 
 
-//= require_tree ../../../node_modules/velocity-animate
-
-
-//= require_tree .
+//= require velocity-animate/velocity.min.js
+//= require velocity-animate/velocity.ui.min.js
 
 // new fullpage('#fullpage', {
 //     navigation: true,
