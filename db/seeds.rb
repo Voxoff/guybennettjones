@@ -2,7 +2,7 @@ hash = {}
 
 (1..6).each do |element|
   element = "" if element == 1
-  file = File.read("../../../lewagon/reviews/Kitt#{element}.html")
+  file = File.read("~/code/Voxoff/lewagon/reviews/Kitt#{element}.html")
   html_doc = Nokogiri::HTML(file)
   html_doc.search('.student-content').each do |e|
     img =  e.search('.img-md-square').to_a.first.attributes["src"].value
