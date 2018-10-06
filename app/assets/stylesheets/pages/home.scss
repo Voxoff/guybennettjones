@@ -2,15 +2,11 @@ body{
   height: 100vh;
 }
 
-.intro{
-  height: 100%;
-}
-
 
 /********************************************************************************************************************************
                                             Hexagon Intro Blocks
 ********************************************************************************************************************************/
-.intro-block {
+.intro {
   position: relative;
   display: flex;
   align-items: center;
@@ -28,8 +24,7 @@ body{
 
 .hoverblock {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
 }
@@ -112,8 +107,7 @@ p.code-title {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   content: "";
   opacity: .2;
   z-index: -1;
@@ -141,7 +135,6 @@ $list: rails ruby heroku react js python c;
 .c.desc-active::after {
   margin-top: -50px;
 }
-
 
 .hex-master-wrap {
   position: relative;

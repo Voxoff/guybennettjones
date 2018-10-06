@@ -1,23 +1,12 @@
 $(document).ready(function () {
   function hex_initial_animation() {
-    $(".hex-wrap,.hover-notify").velocity("transition.slideLeftIn", { stagger: 100 });
+    $(".hex-wrap").velocity("transition.slideLeftIn", { stagger: 100 });
     $(".hex-wrap").velocity("callout.pulse");
     $(".hoverblock").velocity("fadeOut", { delay: 2500, duration: 0 });
   }
   hex_initial_animation();
 
-  var hoverdetect = setInterval(function(){ hovernotify() }, 3000);
-  function hovernotify() {
-    $(".hover-notify").velocity("callout.tada");
-  }
-  function myStopFunction() {
-    $(".hover-notify").velocity('stop', true).velocity("fadeOut");
-    clearInterval(hoverdetect);
-  }
-
   $(".hex-init").mouseenter(function () {
-
-    myStopFunction();
 
     var title_name = $(this).parent().attr("data-title");
     var desc_name = $(this).parent().attr("data-content");
