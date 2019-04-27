@@ -1,8 +1,8 @@
 hash = {}
-
-(1..6).each do |element|
-  element = "" if element == 1
-  file = File.read("~/code/Voxoff/lewagon/reviews/Kitt#{element}.html")
+url = "/Users/gbennettjones/code/guybennettjones/reviews/"
+(1..4).each do |element|
+  # element = "" if element == 1
+  file = File.read("/Users/gbennettjones/code/guybennettjones/reviews/Kitt#{element}.htm")
   html_doc = Nokogiri::HTML(file)
   html_doc.search('.student-content').each do |e|
     img =  e.search('.img-md-square').to_a.first.attributes["src"].value
@@ -11,10 +11,20 @@ hash = {}
     hash[name] = {img: img, review: review} unless review.empty?
   end
 end
-# puts hash
 
+  def image(hash,name)
+    # require 'pry' ; binding.pry
+
+    current = hash[name][:img]
+    "/Users/gbennettjones/code/guybennettjones/reviews/#{current[2..-1]}"
+  end
 # Now to push hash into database
 
 hash.keys.each do |name|
-  Review.create!(person: name, review: hash[name][:review], img_url: hash[name][:img])
+  img = image(hash,name)
+  review = Review.create!(person: name, review: hash[name][:review])
+  File.open(img) do |f|
+    review.img_url = f
+  end
+  review.save!
 end

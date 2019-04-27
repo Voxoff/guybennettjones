@@ -5,3 +5,106 @@
 @import "pages/index";
 @import "bootstrap";
 @import "fullpage.js/dist/fullpage.css";
+
+.reviews {
+  background-color: #F7F7F7;
+  padding: 30px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.student-feedback {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px
+}
+
+
+@media (min-width: 768px) {
+    .reviews .student-feedback {
+        width:100%
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews .student-feedback {
+        margin-left:10px
+    }
+}
+
+.reviews .student-feedback:last-child {
+    margin-bottom: 0
+}
+
+
+
+.reviews .student-feedback .student-content {
+    position: relative;
+    display: flex;
+    width: 100%
+}
+
+@media (min-width: 768px) {
+    .reviews .student-feedback .student-content {
+        min-height:120px
+    }
+}
+
+
+.reviews .student-feedback .student-content .img-md-square {
+    width: 120px;
+    height: 120px
+}
+
+@media (max-width: 768px) {
+    .reviews .student-feedback .student-content .img-md-square {
+        position:absolute;
+        top: -20px;
+        left: -20px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 2px solid white
+    }
+}
+
+
+.reviews .student-feedback>div {
+    background-color: white
+}
+
+@media (min-width: 768px) {
+    .reviews .student-feedback>div {
+        box-shadow:2px 2px 2px 1px rgba(100,100,100,0.2)
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews .student-feedback>div {
+        border-radius:5px
+    }
+}
+
+
+.student-feedback .student-content .feedback-content-container {
+    flex-basis: 86%;
+    padding: 10px
+}
+
+@media (max-width: 767.98px) {
+    .student-feedback .student-content .feedback-content-container {
+        display:flex;
+        align-items: center
+    }
+}
+
+.student-feedback .student-content .feedback-content-container .feedback-content {
+    font-size: 14px;
+}
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.03rem;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 23px;
+}
