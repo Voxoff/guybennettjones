@@ -3,21 +3,17 @@
   <div class="row">
     <div class="col-12 reviews">
       <h2>Reviews</h2>
-      <h5>Le Wagon Reviews</h5>
-      <% @reviews.each do |review| %>
-            <div class="student-feedback">
-              <div class="student-content">
-                <div class="img-container">
-                  <img src=<%= review.img_url %> class="img-md-square">
-                </div>
-                <div class="feedback-content-container">
-                  <div class="feedback-content">
-                    <strong><%= review.person %></strong>
-                    <div class="d-sm-inline ml-1"><%= review.review %></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <h5>Fourfive cbd</h5>
+         <% @ff_reviews.each do |review| %>
+            <%= render "review", review: review %>
+      <% end %>
+        <h5>Flatiron</h5>
+         <% @fl_reviews.each do |review| %>
+            <%= render "review", review: review %>
+      <% end %>
+      <h5>Le Wagon</h5>
+      <% @lw_reviews.each do |review| %>
+            <%= render "review", review: review %>
       <% end %>
     </div>
   </div>

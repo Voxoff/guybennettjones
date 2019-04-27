@@ -1,0 +1,13 @@
+<div class="student-feedback">
+  <div class="student-content">
+    <div class="img-container">
+      <img src=<%= review.img_url %> class="img-md-square">
+    </div>
+    <div class="feedback-content-container">
+      <div class="feedback-content">
+        <strong><%= review.person %></strong>
+        <div class="d-sm-inline ml-1"><%=raw review.review.gsub(/\n/, '<br />') %></div>
+      </div>
+    </div>
+  </div>
+</div>

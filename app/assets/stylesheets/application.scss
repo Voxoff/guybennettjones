@@ -28,6 +28,10 @@
     .reviews .student-feedback {
         margin-left:10px
     }
+
+    h5{
+      margin-bottom: 30px;
+    }
 }
 
 .reviews .student-feedback:last-child {
@@ -51,7 +55,8 @@
 
 .reviews .student-feedback .student-content .img-md-square {
     width: 120px;
-    height: 120px
+    height: 120px;
+    object-fit: cover; // for george cropping
 }
 
 @media (max-width: 768px) {
