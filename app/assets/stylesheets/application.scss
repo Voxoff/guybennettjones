@@ -54,8 +54,8 @@
 
 
 .reviews .student-feedback .student-content .img-md-square {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     object-fit: cover; // for george cropping
 }
 
@@ -90,19 +90,21 @@
 
 
 .student-feedback .student-content .feedback-content-container {
-    flex-basis: 86%;
+    flex-basis: 100%;
     padding: 10px
 }
 
 @media (max-width: 767.98px) {
     .student-feedback .student-content .feedback-content-container {
         display:flex;
-        align-items: center
+        align-items: center;
+        flex-basis: 100%;
     }
 }
 
 .student-feedback .student-content .feedback-content-container .feedback-content {
     font-size: 14px;
+    padding-right: 15px;
 }
 h2 {
   font-weight: 600;
@@ -111,4 +113,20 @@ h2 {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 23px;
+}
+
+.flex {
+  display: flex;
+  flex-grow: 1;
+  // justify-content: center;
+}
+
+.relation {
+  padding: 15px;
+  text-align:center;
+  align-items:center;
+  display: flex;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-left: auto;
 }
