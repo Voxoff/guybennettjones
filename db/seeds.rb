@@ -58,5 +58,5 @@ File.open("app/assets/images/jack.jpeg"){ |f| r.update(img_url: f) }
 
 
 tom = "Guy was a fantastic teacher to our cohort from Day 1. He was quick to understand each student's different approaches to coding, and always approached problems with passion and tenacity. By the end of the course he had developed into a scrum master role, and helped coordinate and mentor us through our final projects."
-r = Review.create(person: "Tom Rowson", review: jack, relation: "Student", workplace: "Flatiron")
+r = Review.create(person: "Tom Rowson", review: tom, relation: "Student", workplace: "Flatiron")
 File.open("app/assets/images/tom_rowson.jpeg"){ |f| r.update(img_url: f) }
