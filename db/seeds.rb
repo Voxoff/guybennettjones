@@ -52,4 +52,11 @@ r = Review.create(person: "Ian Harrison", review: ian, relation: "Student & Coll
 File.open("app/assets/images/ian.png") { |f| r.update(img_url: f) }
 
 
-<span class=" member_preview_link member_image thumb_512" data-member-id="UHAKJNR3L" data-thumb-size="512" style="background-image: url('https://ca.slack-edge.com/T02FZRG24-UHAKJNR3L-bfb7fb469c84-1024'), url('https://ca.slack-edge.com/T02FZRG24-UHAKJNR3L-bfb7fb469c84-72')" aria-hidden="true"></span>
+jack = "Guy is a fantastic developer with a wealth of knowledge. He would always happily help me debug my problems by suggesting ideas based on my requirements and his experience. If I ever had any problems, he’s is the person to go to! Definitely made me get the most out of my bootcamp experience, an absolute pleasure."
+r = Review.create(person: "Jack Ling", review: jack, relation: "Student", workplace: "Flatiron")
+File.open("app/assets/images/jack.jpeg"){ |f| r.update(img_url: f) }
+
+
+tom = "Guy was a fantastic teacher to our cohort from Day 1. He was quick to understand each student's different approaches to coding, and always approached problems with passion and tenacity. By the end of the course he had developed into a scrum master role, and helped coordinate and mentor us through our final projects."
+r = Review.create(person: "Tom Rowson", review: jack, relation: "Student", workplace: "Flatiron")
+File.open("app/assets/images/tom_rowson.jpeg"){ |f| r.update(img_url: f) }
