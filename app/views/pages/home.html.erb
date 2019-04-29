@@ -5,7 +5,7 @@
       <h2>Reviews</h2>
       <h5>Fourfive cbd</h5>
          <% @ff_reviews.each do |review| %>
-            <%= render "review", review: review %>
+            <%= render "review", review: review, bigger: true %>
       <% end %>
         <h5>Flatiron</h5>
          <% @fl_reviews.each do |review| %>
@@ -18,3 +18,4 @@
     </div>
   </div>
 </div>
+
