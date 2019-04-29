@@ -6,7 +6,7 @@
     <div class="feedback-content-container">
       <div class="flex">
         <div class="feedback-content">
-          <strong><%= review.person %></strong>
+          <strong><%= review.person.split(' ').first %></strong>
           <div class="d-sm-inline ml-1"><%=raw review.review.gsub(/\n/, '<br />') %></div>
         </div>
         <div class="relation">
