@@ -130,7 +130,9 @@ h2 {
   margin-left: auto;
 }
 
-.bigger{
-  height: 209px !important;
-  width: 209px !important;
+@media (min-width: 768px) {
+  .bigger{
+    height: 209px !important;
+    width: 209px !important;
+  }
 }
